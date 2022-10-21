@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <section class="sec1">
+            <h1 class="titulo">JUEGO DEL AHORCADO</h1>
+            <button class="inicio" onclick="iniciarJuego()">Iniciar Juego</button>
+            <button class="nuevaPa" onclick="nuevaPalabra()">Agregar nueva palabra</button>
+        </section>
+        
+        <section class="sec2"> 
+            <textarea class="palabraUsuario" autocapitalize="characters" maxlength="8" placeholder="Ingrese una palabra"></textarea>
+            <p>Máx. de 8 letras</p>
+                <div>
+                    <button class="guardar" onclick="nuevaPalabra()">Guardar y empezar</button>
+                    <button class="cancelar">Cancelar</button>
+                </div>
+        </section>
+
+        <section class="sec3">
+            <canvas class="ahorcado" width="1280px" height="550px"> </canvas>
+                <div>
+                    <button class="nuevoJuego">Nuevo Juego</button>
+                    <button class="desistir">Desistir</button>
+                </div>
+            </section>
+    </main>
+    <script src="code.js"></script>
+    <script src="canva.js" ></script>
+</body>
+</html>
